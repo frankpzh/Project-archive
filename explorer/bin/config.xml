@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+
+<UltraExplorerConfig>
+
+	<ExplorerConfig>
+		<ViewMode>幻灯片</ViewMode>
+		<SortMode>文件名</SortMode>
+		<ToolBar />
+		<TreeView />
+	</ExplorerConfig>
+
+	<ServerConfig>
+
+		<BindingPort>25</BindingPort>
+
+		<Timeout>1000</Timeout>
+
+		<Account>
+			<username>anonymous</username>
+			<DirMap>
+				<name>汇编</name>
+				<original>D:\Learning\Assembly</original>
+			</DirMap>
+		</Account>
+
+		<Account>
+			<username>admin</username>
+			<password>d8578edf8458ce06fbc5bb76a58c5ca4</password>
+			<DirMap>
+				<name>Data</name>
+				<original>D:\</original>
+			</DirMap>
+			<DirMap>
+				<name>prep</name>
+				<original>F:\prepared</original>
+			</DirMap>
+		</Account>
+
+		<Account>
+			<username>learning</username>
+			<password>d41d8cd98f00b204e9800998ecf8427e</password>
+			<DirMap>
+				<name>Java</name>
+				<original>D:\Learning\Java</original>
+			</DirMap>
+			<DirMap>
+				<name>Java-book</name>
+				<original>D:\Downloads\The Java Tutorial</original>
+			</DirMap>
+		</Account>
+
+		<Account>
+			<username>music</username>
+			<password>56ab24c15b72a457069c5ea42fcfc640</password>
+			<DirMap>
+				<name>Beyond-96演唱会</name>
+				<original>E:\Beyond\96演唱会cd1</original>
+			</DirMap>
+			<DirMap>
+				<name>克莱德曼</name>
+				<original>E:\克莱德曼</original>
+			</DirMap>
+			<DirMap>
+				<name>肖邦</name>
+				<original>E:\肖邦</original>
+			</DirMap>
+			<DirMap>
+				<name>莫扎特</name>
+				<original>E:\莫扎特</original>
+			</DirMap>
+		</Account>
+
+	</ServerConfig>
+
+	<ClientConfig>
+		<Timeout>1000</Timeout>
+
+		<Site>
+			<name>Server 2</name>
+			<address>59.66.131.167</address>
+			<port>21</port>
+			<username>user9</username>
+			<password>freshsystem</password>
+		</Site>
+
+		<Site>
+			<name>Frank Pzh</name>
+			<address>59.66.131.46</address>
+			<port>21</port>
+			<username>anonymous</username>
+			<password>jiajia</password>
+		</Site>
+
+		<Site>
+			<name>abc</name>
+			<address>59.66.131.46</address>
+			<port>25</port>
+			<username>admin</username>
+			<password>qwerty</password>
+		</Site>
+
+		<Site>
+			<name>Happy</name>
+			<address>166.111.18.73</address>
+			<port>40021</port>
+			<username>anonymous</username>
+			<password>ultraexplorer</password>
+		</Site>
+
+		<Site>
+			<name>59.66.131.45</name>
+			<address>59.66.131.45</address>
+			<port>2006</port>
+			<username>wqp</username>
+			<password>2005011267</password>
+		</Site>
+
+		<Site>
+			<name>shen</name>
+			<address>59.66.131.52</address>
+			<port>1250</port>
+			<username>a</username>
+			<password>a</password>
+		</Site>
+
+	</ClientConfig>
+
+</UltraExplorerConfig>

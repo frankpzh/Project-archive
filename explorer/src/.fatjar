@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sat Aug 11 12:31:14 CST 2007
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=D\:\\Learning\\Java\\\u5927\u5B9E\u9A8C\\Source\\UltraExplorer_fat.jar
+manifest.mergeall=true
+manifest.mainclass=Explorer.UltraExplorer
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=<po|UltraExplorer>~.settings/;<po|UltraExplorer>~list;<po|UltraExplorer>~.classpath;<po|UltraExplorer>~.project
+includes=

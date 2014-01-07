@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<UltraExplorerConfig>
+
+	<ExplorerConfig>
+		<ViewMode>平铺</ViewMode>
+		<SortMode>文件名</SortMode>
+		<ToolBar />
+		<TreeView />
+	</ExplorerConfig>
+
+	<ServerConfig>
+
+		<BindingPort>21</BindingPort>
+
+		<Timeout>1000</Timeout>
+
+	</ServerConfig>
+
+	<ClientConfig>
+		<Timeout>1000</Timeout>
+
+	</ClientConfig>
+
+</UltraExplorerConfig>

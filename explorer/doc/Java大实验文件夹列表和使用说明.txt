@@ -1,0 +1,28 @@
+Java大实验文件夹列表和使用说明
+
+计52	潘震皓	学号: 2005011254
+
+./doc/Java大实验文件夹列表和使用说明.txt
+	本文件
+./doc/Java大实验报告.doc
+	实验报告
+./doc/2007夏季学期Java大实验讲稿.ppt
+	助教大人写的实验要求
+./src/
+	所有源文件所在目录，同时是一个Eclipse工程目录
+./proj/
+	用NetBeans的Eclipse工程->NetBeans工程功能转换的工程，用于界面设计和性能分析
+./bin
+	编译好的.jar文件和其他所需文件，双击UltraExplorer.jar即可运行浏览器		<---------		使用说明
+./bin/UltraExplorer.jar
+	可执行文件
+./bin/config.xml
+	设置的保存地点，xml 1.0格式
+./bin/msyh.ttf
+	微软雅黑字体，在程序中被使用到
+./bin/Icons
+	图标文件(图片文件)存放的文件夹
+./bin/Temp
+	临时文件夹，用于暂存下载文件
+./external/JMF Installer.exe
+	JMF安装程序，如未装JMF则不可播放音乐
