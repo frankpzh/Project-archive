@@ -1,0 +1,21 @@
+#ifndef __SDRAM_H__
+#define __SDRAM_H__
+
+#define MISCCR		0x56000080
+#define BWSCON		0x48000000
+#define BANKCON0	0x48000004
+#define BANKCON1	0x48000008
+#define BANKCON2	0x4800000c
+#define BANKCON3	0x48000010
+#define BANKCON4	0x48000014
+#define BANKCON5	0x48000018
+#define BANKCON6	0x4800001c
+#define BANKCON7	0x48000020
+#define REFRESH		0x48000024
+#define BANKSIZE	0x48000028
+#define MRSRB6		0x4800002c
+#define MRSRB7		0x48000030
+
+void memory_init();
+
+#endif

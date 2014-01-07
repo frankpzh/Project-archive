@@ -1,0 +1,287 @@
+The following options are target specific:
+  -mabi=                      Specify an ABI
+  -mabort-on-noreturn         Generate a call to abort if a noreturn function
+                              returns
+  -mapcs-float                Pass FP arguments in FP registers
+  -mapcs-frame                Generate APCS conformant stack frames
+  -mapcs-reentrant            Generate re-entrant, PIC code
+  -march=                     Specify the name of the target architecture
+  -mbig-endian                Assume target CPU is configured as big endian
+  -mcallee-super-interworking Thumb: Assume non-static functions may be called
+                              from ARM code
+  -mcaller-super-interworking Thumb: Assume function pointers may go to non-
+                              Thumb aware code
+  -mcirrus-fix-invalid-insns  Cirrus: Place NOPs to avoid invalid instruction
+                              combinations
+  -mcpu=                      Specify the name of the target CPU
+  -mfloat-abi=                Specify if floating point hardware should be used
+  -mfpu=                      Specify the name of the target floating point
+                              hardware/format
+  -mglibc                     Use GNU libc instead of uClibc
+  -mhard-float                Alias for -mfloat-abi=hard
+  -mlittle-endian             Assume target CPU is configured as little endian
+  -mlong-calls                Generate call insns as indirect calls, if
+                              necessary
+  -mpic-register=             Specify the register to be used for PIC addressing
+  -mpoke-function-name        Store function names in object code
+  -msched-prolog              Permit scheduling of a function's prologue
+                              sequence
+  -msingle-pic-base           Do not load the PIC register in function prologues
+  -msoft-float                Alias for -mfloat-abi=soft
+  -mstructure-size-boundary=  Specify the minimum bit alignment of structures
+  -mthumb                     Compile for the Thumb not the ARM
+  -mthumb-interwork           Support calls between Thumb and ARM instruction
+                              sets
+  -mtp=                       Specify how to access the thread pointer
+  -mtpcs-frame                Thumb: Generate (non-leaf) stack frames even if
+                              not needed
+  -mtpcs-leaf-frame           Thumb: Generate (leaf) stack frames even if not
+                              needed
+  -mtune=                     Tune code for the given processor
+  -muclibc                    Use uClibc instead of GNU libc
+  -mvectorize-with-neon-quad  Use Neon quad-word (rather than double-word)
+                              registers for vectorization
+  -mwords-little-endian       Assume big endian bytes, little endian words
+
+  Known ARM CPUs (for use with the -mcpu= and -mtune= options):
+    cortex-m3, cortex-r4, cortex-a8, arm1156t2-s, mpcore, mpcorenovfp,
+    arm1176jzf-s, arm1176jz-s, arm1136jf-s, arm1136j-s, arm1026ej-s, arm926ej-s,
+    iwmmxt, xscale, arm1022e, arm1020e, arm10e, arm968e-s, arm966e-s, arm946e-s,
+    arm9e, arm1020t, arm10tdmi, ep9312, arm940t, arm922t, arm920t, arm920,
+    arm9tdmi, arm9, arm740t, arm720t, arm710t, arm7tdmi-s, arm7tdmi,
+    strongarm1110, strongarm1100, strongarm110, strongarm, arm810, arm8,
+    arm7dmi, arm7dm, arm7m, arm7500fe, arm7500, arm7100, arm710c, arm720,
+    arm710, arm700i, arm700, arm70, arm7di, arm7d, arm7, arm620, arm610, arm600,
+    arm60, arm6, arm3, arm250, arm2
+
+  Known ARM architectures (for use with the -march= option):
+    iwmmxt, ep9312, armv7-m, armv7-r, armv7-a, armv7, armv6t2, armv6zk, armv6z,
+    armv6k, armv6j, armv6, armv5te, armv5e, armv5t, armv5, armv4t, armv4,
+    armv3m, armv3, armv2a, armv2
+ ARM-specific assembler options:
+  -k                      generate PIC code
+  -mthumb                 assemble Thumb code
+  -mthumb-interwork       support ARM/Thumb interworking
+  -mapcs-32               code uses 32-bit program counter
+  -mapcs-26               code uses 26-bit program counter
+  -mapcs-float            floating point args are in fp regs
+  -mapcs-reentrant        re-entrant code
+  -matpcs                 code is ATPCS conformant
+  -mbig-endian            assemble for big-endian
+  -mlittle-endian         assemble for little-endian
+  -mapcs-frame            use frame pointer
+  -mapcs-stack-check      use stack size checking
+  -mcpu=<cpu name>	  assemble for CPU <cpu name>
+  -march=<arch name>	  assemble for architecture <arch name>
+  -mfpu=<fpu name>	  assemble for FPU architecture <fpu name>
+  -mfloat-abi=<abi>	  assemble for floating point ABI <abi>
+  -meabi=<ver>		  assemble for eabi version <ver>
+  -EB                     assemble code for a big-endian cpu
+  -EL                     assemble code for a little-endian cpu
+  --fix-v4bx              Allow BX in ARMv4 code
+
+Linker options
+==============
+
+Use "-Wl,OPTION" to pass "OPTION" to the linker.
+
+armelf_linux: 
+  --build-id[=STYLE]          Generate build ID note
+  -Bgroup                     Selects group name lookup rules for DSO
+  --disable-new-dtags         Disable new dynamic tags
+  --enable-new-dtags          Enable new dynamic tags
+  --eh-frame-hdr              Create .eh_frame_hdr section
+  --hash-style=STYLE          Set hash style to sysv, gnu or both
+  -z combreloc                Merge dynamic relocs into one section and sort
+  -z defs                     Report unresolved symbols in object files.
+  -z execstack                Mark executable as requiring executable stack
+  -z execheap                 Mark executable as requiring executable heap
+  -z initfirst                Mark DSO to be initialized first at runtime
+  -z interpose                Mark object to interpose all DSOs but executable
+  -z lazy                     Mark object lazy runtime binding (default)
+  -z loadfltr                 Mark object requiring immediate process
+  -z muldefs                  Allow multiple definitions
+  -z nocombreloc              Don't merge dynamic relocs into one section
+  -z nocopyreloc              Don't create copy relocs
+  -z nodefaultlib             Mark object not to use default search paths
+  -z nodelete                 Mark DSO non-deletable at runtime
+  -z nodlopen                 Mark DSO not available to dlopen
+  -z nodump                   Mark DSO not available to dldump
+  -z noexecstack              Mark executable as not requiring executable stack
+  -z noexecheap               Mark executable as not requiring executable heap
+  -z norelro                  Don't create RELRO program header
+  -z now                      Mark object non-lazy runtime binding
+  -z origin                   Mark object requiring immediate $ORIGIN
+                                processing at runtime
+  -z relro                    Create RELRO program header
+  -z max-page-size=SIZE       Set maximum page size to SIZE
+  -z common-page-size=SIZE    Set common page size to SIZE
+  -z KEYWORD                  Ignored for Solaris compatibility
+  --thumb-entry=<sym>         Set the entry point to be Thumb symbol <sym>
+  --be8                       Oputput BE8 format image
+  --target1=rel               Interpret R_ARM_TARGET1 as R_ARM_REL32
+  --target1=abs               Interpret R_ARM_TARGET1 as R_ARM_ABS32
+  --target2=<type>            Specify definition of R_ARM_TARGET2
+  --fix-v4bx                  Rewrite BX rn as MOV pc, rn for ARMv4
+  --fix-v4bx-interworking     Rewrite BX rn branch to ARMv4 interworking veneer
+  --use-blx                   Enable use of BLX instructions
+  --vfp11-denorm-fix          Specify how to fix VFP11 denorm erratum
+  --no-enum-size-warning      Don't warn about objects with incompatible                                enum sizes
+  --no-wchar-size-warning     Don't warn about objects with incompatible                                wchar_t sizes
+  --pic-veneer                Always generate PIC interworking veneers
+   --stub-group-size=N   Maximum size of a group of input sections that can be
+                           handled by one stub section.  A negative value
+                           locates all stubs before their branches (with a
+                           group size of -N), while a positive value allows
+                           two groups of input sections, one before, and one
+                           after each stub section.  Values of +/-1 indicate
+                           the linker should choose suitable defaults.
+armelf: 
+  --build-id[=STYLE]          Generate build ID note
+  -Bgroup                     Selects group name lookup rules for DSO
+  --disable-new-dtags         Disable new dynamic tags
+  --enable-new-dtags          Enable new dynamic tags
+  --eh-frame-hdr              Create .eh_frame_hdr section
+  --hash-style=STYLE          Set hash style to sysv, gnu or both
+  -z combreloc                Merge dynamic relocs into one section and sort
+  -z defs                     Report unresolved symbols in object files.
+  -z execstack                Mark executable as requiring executable stack
+  -z execheap                 Mark executable as requiring executable heap
+  -z initfirst                Mark DSO to be initialized first at runtime
+  -z interpose                Mark object to interpose all DSOs but executable
+  -z lazy                     Mark object lazy runtime binding (default)
+  -z loadfltr                 Mark object requiring immediate process
+  -z muldefs                  Allow multiple definitions
+  -z nocombreloc              Don't merge dynamic relocs into one section
+  -z nocopyreloc              Don't create copy relocs
+  -z nodefaultlib             Mark object not to use default search paths
+  -z nodelete                 Mark DSO non-deletable at runtime
+  -z nodlopen                 Mark DSO not available to dlopen
+  -z nodump                   Mark DSO not available to dldump
+  -z noexecstack              Mark executable as not requiring executable stack
+  -z noexecheap               Mark executable as not requiring executable heap
+  -z now                      Mark object non-lazy runtime binding
+  -z origin                   Mark object requiring immediate $ORIGIN
+                                processing at runtime
+  -z max-page-size=SIZE       Set maximum page size to SIZE
+  -z common-page-size=SIZE    Set common page size to SIZE
+  -z KEYWORD                  Ignored for Solaris compatibility
+  --thumb-entry=<sym>         Set the entry point to be Thumb symbol <sym>
+  --be8                       Oputput BE8 format image
+  --target1=rel               Interpret R_ARM_TARGET1 as R_ARM_REL32
+  --target1=abs               Interpret R_ARM_TARGET1 as R_ARM_ABS32
+  --target2=<type>            Specify definition of R_ARM_TARGET2
+  --fix-v4bx                  Rewrite BX rn as MOV pc, rn for ARMv4
+  --fix-v4bx-interworking     Rewrite BX rn branch to ARMv4 interworking veneer
+  --use-blx                   Enable use of BLX instructions
+  --vfp11-denorm-fix          Specify how to fix VFP11 denorm erratum
+  --no-enum-size-warning      Don't warn about objects with incompatible                                enum sizes
+  --no-wchar-size-warning     Don't warn about objects with incompatible                                wchar_t sizes
+  --pic-veneer                Always generate PIC interworking veneers
+   --stub-group-size=N   Maximum size of a group of input sections that can be
+                           handled by one stub section.  A negative value
+                           locates all stubs before their branches (with a
+                           group size of -N), while a positive value allows
+                           two groups of input sections, one before, and one
+                           after each stub section.  Values of +/-1 indicate
+                           the linker should choose suitable defaults.
+armelfb: 
+  --build-id[=STYLE]          Generate build ID note
+  -Bgroup                     Selects group name lookup rules for DSO
+  --disable-new-dtags         Disable new dynamic tags
+  --enable-new-dtags          Enable new dynamic tags
+  --eh-frame-hdr              Create .eh_frame_hdr section
+  --hash-style=STYLE          Set hash style to sysv, gnu or both
+  -z combreloc                Merge dynamic relocs into one section and sort
+  -z defs                     Report unresolved symbols in object files.
+  -z execstack                Mark executable as requiring executable stack
+  -z execheap                 Mark executable as requiring executable heap
+  -z initfirst                Mark DSO to be initialized first at runtime
+  -z interpose                Mark object to interpose all DSOs but executable
+  -z lazy                     Mark object lazy runtime binding (default)
+  -z loadfltr                 Mark object requiring immediate process
+  -z muldefs                  Allow multiple definitions
+  -z nocombreloc              Don't merge dynamic relocs into one section
+  -z nocopyreloc              Don't create copy relocs
+  -z nodefaultlib             Mark object not to use default search paths
+  -z nodelete                 Mark DSO non-deletable at runtime
+  -z nodlopen                 Mark DSO not available to dlopen
+  -z nodump                   Mark DSO not available to dldump
+  -z noexecstack              Mark executable as not requiring executable stack
+  -z noexecheap               Mark executable as not requiring executable heap
+  -z now                      Mark object non-lazy runtime binding
+  -z origin                   Mark object requiring immediate $ORIGIN
+                                processing at runtime
+  -z max-page-size=SIZE       Set maximum page size to SIZE
+  -z common-page-size=SIZE    Set common page size to SIZE
+  -z KEYWORD                  Ignored for Solaris compatibility
+  --thumb-entry=<sym>         Set the entry point to be Thumb symbol <sym>
+  --be8                       Oputput BE8 format image
+  --target1=rel               Interpret R_ARM_TARGET1 as R_ARM_REL32
+  --target1=abs               Interpret R_ARM_TARGET1 as R_ARM_ABS32
+  --target2=<type>            Specify definition of R_ARM_TARGET2
+  --fix-v4bx                  Rewrite BX rn as MOV pc, rn for ARMv4
+  --fix-v4bx-interworking     Rewrite BX rn branch to ARMv4 interworking veneer
+  --use-blx                   Enable use of BLX instructions
+  --vfp11-denorm-fix          Specify how to fix VFP11 denorm erratum
+  --no-enum-size-warning      Don't warn about objects with incompatible                                enum sizes
+  --no-wchar-size-warning     Don't warn about objects with incompatible                                wchar_t sizes
+  --pic-veneer                Always generate PIC interworking veneers
+   --stub-group-size=N   Maximum size of a group of input sections that can be
+                           handled by one stub section.  A negative value
+                           locates all stubs before their branches (with a
+                           group size of -N), while a positive value allows
+                           two groups of input sections, one before, and one
+                           after each stub section.  Values of +/-1 indicate
+                           the linker should choose suitable defaults.
+armelfb_linux: 
+  --build-id[=STYLE]          Generate build ID note
+  -Bgroup                     Selects group name lookup rules for DSO
+  --disable-new-dtags         Disable new dynamic tags
+  --enable-new-dtags          Enable new dynamic tags
+  --eh-frame-hdr              Create .eh_frame_hdr section
+  --hash-style=STYLE          Set hash style to sysv, gnu or both
+  -z combreloc                Merge dynamic relocs into one section and sort
+  -z defs                     Report unresolved symbols in object files.
+  -z execstack                Mark executable as requiring executable stack
+  -z execheap                 Mark executable as requiring executable heap
+  -z initfirst                Mark DSO to be initialized first at runtime
+  -z interpose                Mark object to interpose all DSOs but executable
+  -z lazy                     Mark object lazy runtime binding (default)
+  -z loadfltr                 Mark object requiring immediate process
+  -z muldefs                  Allow multiple definitions
+  -z nocombreloc              Don't merge dynamic relocs into one section
+  -z nocopyreloc              Don't create copy relocs
+  -z nodefaultlib             Mark object not to use default search paths
+  -z nodelete                 Mark DSO non-deletable at runtime
+  -z nodlopen                 Mark DSO not available to dlopen
+  -z nodump                   Mark DSO not available to dldump
+  -z noexecstack              Mark executable as not requiring executable stack
+  -z noexecheap               Mark executable as not requiring executable heap
+  -z norelro                  Don't create RELRO program header
+  -z now                      Mark object non-lazy runtime binding
+  -z origin                   Mark object requiring immediate $ORIGIN
+                                processing at runtime
+  -z relro                    Create RELRO program header
+  -z max-page-size=SIZE       Set maximum page size to SIZE
+  -z common-page-size=SIZE    Set common page size to SIZE
+  -z KEYWORD                  Ignored for Solaris compatibility
+  --thumb-entry=<sym>         Set the entry point to be Thumb symbol <sym>
+  --be8                       Oputput BE8 format image
+  --target1=rel               Interpret R_ARM_TARGET1 as R_ARM_REL32
+  --target1=abs               Interpret R_ARM_TARGET1 as R_ARM_ABS32
+  --target2=<type>            Specify definition of R_ARM_TARGET2
+  --fix-v4bx                  Rewrite BX rn as MOV pc, rn for ARMv4
+  --fix-v4bx-interworking     Rewrite BX rn branch to ARMv4 interworking veneer
+  --use-blx                   Enable use of BLX instructions
+  --vfp11-denorm-fix          Specify how to fix VFP11 denorm erratum
+  --no-enum-size-warning      Don't warn about objects with incompatible                                enum sizes
+  --no-wchar-size-warning     Don't warn about objects with incompatible                                wchar_t sizes
+  --pic-veneer                Always generate PIC interworking veneers
+   --stub-group-size=N   Maximum size of a group of input sections that can be
+                           handled by one stub section.  A negative value
+                           locates all stubs before their branches (with a
+                           group size of -N), while a positive value allows
+                           two groups of input sections, one before, and one
+                           after each stub section.  Values of +/-1 indicate
+                           the linker should choose suitable defaults.
