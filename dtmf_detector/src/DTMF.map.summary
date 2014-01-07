@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jan 07 14:29:47 2008
+Quartus II Version : 7.1 Build 156 04/30/2007 SJ Full Version
+Revision Name : DTMF
+Top-level Entity Name : DTMF
+Family : Cyclone II
+Total logic elements : 11,517
+    Total combinational functions : 11,517
+    Dedicated logic registers : 632
+Total registers : 632
+Total pins : 43
+Total virtual pins : 0
+Total memory bits : 180,224
+Embedded Multiplier 9-bit elements : 52
+Total PLLs : 0
