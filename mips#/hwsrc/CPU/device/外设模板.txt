@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity device is
+	port(
+		clk:in std_logic;
+		
+		--BUS
+		BUS_we:in std_logic;
+		BUS_addr:in std_logic_vector(31 downto 0);
+		BUS_data:in std_logic_vector(15 downto 0);
+		BUS_q:inout std_logic_vector(15 downto 0);
+		BUS_busy:inout std_logic;
+		
+		--device
+	);
+end;
+
+architecture main of device is
+
+signal cs,busy:std_logic;
+signal q:std_logic_vector(15 downto 0);
+
+begin
+	
+	process(clk)
+	begin
+		if clk'event and clk='1' then
+			if BUS_addr(31 downto 1)="0000000010000100000001010001000" then
+				cs<='1';
+			else
+				cs<='0';
+			end if;
+		end if;
+	end process;
+	
+	BUS_busy<=busy when cs='1' else 'Z';
+	BUS_q<=q when cs='1' else (others=>'Z');
+	
+end;

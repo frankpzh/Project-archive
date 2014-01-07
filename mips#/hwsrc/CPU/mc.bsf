@@ -1,0 +1,148 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 352 256)
+	(text "mc" (rect 5 0 20 12)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CU_cs" (rect 0 0 34 12)(font "Arial" ))
+		(text "CU_cs" (rect 21 27 55 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CU_we" (rect 0 0 35 12)(font "Arial" ))
+		(text "CU_we" (rect 21 43 56 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "CU_reg[2..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "CU_reg[2..0]" (rect 21 91 84 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CU_addr[31..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "CU_addr[31..0]" (rect 21 59 96 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CU_data[15..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "CU_data[15..0]" (rect 21 75 96 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 136 192)
+		(input)
+		(text "BUS_busy" (rect 0 0 53 12)(font "Arial" ))
+		(text "BUS_busy" (rect 128 115 140 168)(font "Arial" )(vertical))
+		(line (pt 136 192)(pt 136 176)(line_width 1))
+	)
+	(port
+		(pt 120 192)
+		(input)
+		(text "BUS_q[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "BUS_q[15..0]" (rect 112 102 124 168)(font "Arial" )(vertical))
+		(line (pt 120 192)(pt 120 176)(line_width 3))
+	)
+	(port
+		(pt 192 0)
+		(input)
+		(text "REG_last[15..0]" (rect 168 24 182 111)(font "Arial" (font_size 8))(vertical))
+		(text "REG_last[15..0]" (rect 184 16 196 95)(font "Arial" )(vertical))
+		(line (pt 192 0)(pt 192 16)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "Loopback_en" (rect 24 112 100 126)(font "Arial" (font_size 8)))
+		(text "Loopback_en" (rect 24 112 88 124)(font "Arial" ))
+		(line (pt 0 120)(pt 16 120)(line_width 1))
+	)
+	(port
+		(pt 56 192)
+		(output)
+		(text "BUS_cs" (rect 0 0 40 12)(font "Arial" ))
+		(text "BUS_cs" (rect 48 128 60 168)(font "Arial" )(vertical))
+		(line (pt 56 192)(pt 56 176)(line_width 1))
+	)
+	(port
+		(pt 72 192)
+		(output)
+		(text "BUS_we" (rect 0 0 41 12)(font "Arial" ))
+		(text "BUS_we" (rect 64 127 76 168)(font "Arial" )(vertical))
+		(line (pt 72 192)(pt 72 176)(line_width 1))
+	)
+	(port
+		(pt 88 192)
+		(output)
+		(text "BUS_addr[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_addr[31..0]" (rect 80 87 92 168)(font "Arial" )(vertical))
+		(line (pt 88 192)(pt 88 176)(line_width 3))
+	)
+	(port
+		(pt 104 192)
+		(output)
+		(text "BUS_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_data[15..0]" (rect 96 87 108 168)(font "Arial" )(vertical))
+		(line (pt 104 192)(pt 104 176)(line_width 3))
+	)
+	(port
+		(pt 224 0)
+		(output)
+		(text "REG_id[2..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "REG_id[2..0]" (rect 216 24 228 87)(font "Arial" )(vertical))
+		(line (pt 224 0)(pt 224 16)(line_width 3))
+	)
+	(port
+		(pt 240 0)
+		(output)
+		(text "REG_in[15..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "REG_in[15..0]" (rect 232 24 244 93)(font "Arial" )(vertical))
+		(line (pt 240 0)(pt 240 16)(line_width 3))
+	)
+	(port
+		(pt 208 0)
+		(output)
+		(text "REG_en" (rect 0 0 41 12)(font "Arial" ))
+		(text "REG_en" (rect 200 24 212 65)(font "Arial" )(vertical))
+		(line (pt 208 0)(pt 208 16)(line_width 1))
+	)
+	(port
+		(pt 256 0)
+		(output)
+		(text "MC_busy" (rect 200 24 214 77)(font "Arial" (font_size 8))(vertical))
+		(text "MC_busy" (rect 248 24 260 71)(font "Arial" )(vertical))
+		(line (pt 256 0)(pt 256 16)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 176)(line_width 1))
+	)
+)

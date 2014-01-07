@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 296 296)
+	(text "CPU" (rect 5 0 28 12)(font "Arial" ))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 24 24 39 38)(font "Arial" (font_size 8)))
+		(text "clk" (rect 24 24 38 36)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk_cache" (rect 32 56 89 70)(font "Arial" (font_size 8)))
+		(text "clk_cache" (rect 24 56 73 68)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 88 232)
+		(input)
+		(text "BUS_q[15..0]" (rect 80 182 94 256)(font "Arial" (font_size 8))(vertical))
+		(text "BUS_q[15..0]" (rect 80 136 92 202)(font "Arial" )(vertical))
+		(line (pt 88 232)(pt 88 216)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 104 232)
+		(input)
+		(text "BUS_busy" (rect 96 182 110 242)(font "Arial" (font_size 8))(vertical))
+		(text "BUS_busy" (rect 96 152 108 205)(font "Arial" )(vertical))
+		(line (pt 104 232)(pt 104 216)(line_width 1))
+	)
+	(port
+		(pt 152 0)
+		(input)
+		(text "IPC[31..0]" (rect 88 24 102 77)(font "Arial" (font_size 8))(vertical))
+		(text "IPC[31..0]" (rect 144 24 156 74)(font "Arial" )(vertical))
+		(line (pt 152 0)(pt 152 16)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_n" (rect 24 40 67 54)(font "Arial" (font_size 8)))
+		(text "reset_n" (rect 24 40 60 52)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "INT_timer" (rect 72 24 86 75)(font "Arial" (font_size 8))(vertical))
+		(text "INT_timer" (rect 72 24 84 72)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 1))
+	)
+	(port
+		(pt 96 0)
+		(input)
+		(text "INT_kbd" (rect 88 24 102 68)(font "Arial" (font_size 8))(vertical))
+		(text "INT_kbd" (rect 88 24 100 65)(font "Arial" )(vertical))
+		(line (pt 96 0)(pt 96 16)(line_width 1))
+	)
+	(port
+		(pt 112 0)
+		(input)
+		(text "INT_wm8731" (rect 104 24 118 98)(font "Arial" (font_size 8))(vertical))
+		(text "INT_wm8731" (rect 104 24 116 87)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 16)(line_width 1))
+	)
+	(port
+		(pt 168 0)
+		(output)
+		(text "NPC_IPC[31..0]" (rect 104 24 118 107)(font "Arial" (font_size 8))(vertical))
+		(text "NPC_IPC[31..0]" (rect 160 24 172 104)(font "Arial" )(vertical))
+		(line (pt 168 0)(pt 168 16)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 184 0)
+		(output)
+		(text "NPC_IPC_en" (rect 120 24 134 93)(font "Arial" (font_size 8))(vertical))
+		(text "NPC_IPC_en" (rect 176 24 188 90)(font "Arial" )(vertical))
+		(line (pt 184 0)(pt 184 16)(line_width 1))
+	)
+	(port
+		(pt 232 136)
+		(output)
+		(text "PC[31..0]" (rect 182 112 232 126)(font "Arial" (font_size 8)))
+		(text "PC[31..0]" (rect 160 128 207 140)(font "Arial" ))
+		(line (pt 232 136)(pt 216 136)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 40 232)
+		(output)
+		(text "BUS_we" (rect 32 182 46 232)(font "Arial" (font_size 8))(vertical))
+		(text "BUS_we" (rect 32 160 44 201)(font "Arial" )(vertical))
+		(line (pt 40 232)(pt 40 216)(line_width 1))
+	)
+	(port
+		(pt 56 232)
+		(output)
+		(text "BUS_addr[31..0]" (rect 48 182 62 275)(font "Arial" (font_size 8))(vertical))
+		(text "BUS_addr[31..0]" (rect 48 120 60 201)(font "Arial" )(vertical))
+		(line (pt 56 232)(pt 56 216)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 72 232)
+		(output)
+		(text "BUS_data[15..0]" (rect 64 182 78 274)(font "Arial" (font_size 8))(vertical))
+		(text "BUS_data[15..0]" (rect 64 120 76 201)(font "Arial" )(vertical))
+		(line (pt 72 232)(pt 72 216)(color 128 0 255)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 216)(line_width 1))
+	)
+)

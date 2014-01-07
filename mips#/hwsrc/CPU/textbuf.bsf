@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 200 264)
+	(text "textbuf" (rect 5 0 40 12)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 48 0)
+		(input)
+		(text "BUS_we" (rect 0 0 41 12)(font "Arial" ))
+		(text "BUS_we" (rect 40 24 52 65)(font "Arial" )(vertical))
+		(line (pt 48 0)(pt 48 16)(line_width 1))
+	)
+	(port
+		(pt 64 0)
+		(input)
+		(text "BUS_addr[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_addr[31..0]" (rect 56 24 68 105)(font "Arial" )(vertical))
+		(line (pt 64 0)(pt 64 16)(line_width 3))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "BUS_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_data[15..0]" (rect 72 24 84 105)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 3))
+	)
+	(port
+		(pt 48 200)
+		(input)
+		(text "LCD_addr[9..0]" (rect 0 72 75 84)(font "Arial" ))
+		(text "LCD_addr[9..0]" (rect 40 96 52 171)(font "Arial" )(vertical))
+		(line (pt 48 200)(pt 48 184)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk_lcd" (rect 24 40 62 54)(font "Arial" (font_size 8)))
+		(text "clk_lcd" (rect 24 40 58 52)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 64 200)
+		(output)
+		(text "LCD_q[15..0]" (rect 0 72 66 84)(font "Arial" ))
+		(text "LCD_q[15..0]" (rect 56 105 68 171)(font "Arial" )(vertical))
+		(line (pt 64 200)(pt 64 184)(line_width 3))
+	)
+	(port
+		(pt 96 0)
+		(bidir)
+		(text "BUS_q[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "BUS_q[15..0]" (rect 88 24 100 90)(font "Arial" )(vertical))
+		(line (pt 96 0)(pt 96 16)(line_width 3))
+	)
+	(port
+		(pt 112 0)
+		(bidir)
+		(text "BUS_busy" (rect 0 0 53 12)(font "Arial" ))
+		(text "BUS_busy" (rect 104 24 116 77)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 16)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 184)(line_width 1))
+	)
+)

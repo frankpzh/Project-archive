@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 264 312)
+	(text "SRAM_ctrl" (rect 5 0 56 12)(font "Arial" ))
+	(text "inst" (rect 8 160 25 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 64 0)
+		(input)
+		(text "BUS_we" (rect 0 0 41 12)(font "Arial" ))
+		(text "BUS_we" (rect 56 24 68 65)(font "Arial" )(vertical))
+		(line (pt 64 0)(pt 64 16)(line_width 1))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "BUS_addr[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_addr[31..0]" (rect 72 24 84 105)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 3))
+	)
+	(port
+		(pt 96 0)
+		(input)
+		(text "BUS_data[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "BUS_data[15..0]" (rect 88 24 100 105)(font "Arial" )(vertical))
+		(line (pt 96 0)(pt 96 16)(line_width 3))
+	)
+	(port
+		(pt 200 120)
+		(output)
+		(text "SRAM_addr[17..0]" (rect -24 0 65 12)(font "Arial" ))
+		(text "SRAM_addr[17..0]" (rect 88 112 177 124)(font "Arial" ))
+		(line (pt 200 120)(pt 184 120)(line_width 3))
+	)
+	(port
+		(pt 200 152)
+		(output)
+		(text "SRAM_n_we" (rect -24 0 37 12)(font "Arial" ))
+		(text "SRAM_n_we" (rect 116 144 177 156)(font "Arial" ))
+		(line (pt 200 152)(pt 184 152)(line_width 1))
+	)
+	(port
+		(pt 200 168)
+		(output)
+		(text "SRAM_n_oe" (rect -24 0 36 12)(font "Arial" ))
+		(text "SRAM_n_oe" (rect 117 160 177 172)(font "Arial" ))
+		(line (pt 200 168)(pt 184 168)(line_width 1))
+	)
+	(port
+		(pt 200 184)
+		(output)
+		(text "SRAM_n_ub" (rect -24 0 36 12)(font "Arial" ))
+		(text "SRAM_n_ub" (rect 117 176 177 188)(font "Arial" ))
+		(line (pt 200 184)(pt 184 184)(line_width 1))
+	)
+	(port
+		(pt 200 200)
+		(output)
+		(text "SRAM_n_lb" (rect -24 0 32 12)(font "Arial" ))
+		(text "SRAM_n_lb" (rect 121 192 177 204)(font "Arial" ))
+		(line (pt 200 200)(pt 184 200)(line_width 1))
+	)
+	(port
+		(pt 200 216)
+		(output)
+		(text "SRAM_n_ce" (rect -24 0 36 12)(font "Arial" ))
+		(text "SRAM_n_ce" (rect 117 208 177 220)(font "Arial" ))
+		(line (pt 200 216)(pt 184 216)(line_width 1))
+	)
+	(port
+		(pt 112 0)
+		(bidir)
+		(text "BUS_q[15..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "BUS_q[15..0]" (rect 104 24 116 90)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 16)(line_width 3))
+	)
+	(port
+		(pt 128 0)
+		(bidir)
+		(text "BUS_busy" (rect 0 0 53 12)(font "Arial" ))
+		(text "BUS_busy" (rect 120 24 132 77)(font "Arial" )(vertical))
+		(line (pt 128 0)(pt 128 16)(line_width 1))
+	)
+	(port
+		(pt 200 136)
+		(bidir)
+		(text "SRAM_data[15..0]" (rect -24 0 65 12)(font "Arial" ))
+		(text "SRAM_data[15..0]" (rect 88 128 177 140)(font "Arial" ))
+		(line (pt 200 136)(pt 184 136)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 232)(line_width 1))
+	)
+)

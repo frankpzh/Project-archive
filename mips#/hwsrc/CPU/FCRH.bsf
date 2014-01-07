@@ -1,0 +1,281 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 1080 208)
+	(text "FCRH" (rect 8 0 39 12)(font "Arial" ))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 -112 14 -100)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 96 144)
+		(input)
+		(text "CC_busy" (rect 0 -112 47 -100)(font "Arial" ))
+		(text "CC_busy" (rect 88 73 100 120)(font "Arial" )(vertical))
+		(line (pt 96 144)(pt 96 128)(line_width 1))
+	)
+	(port
+		(pt 496 144)
+		(input)
+		(text "NPC_en" (rect 0 -112 41 -100)(font "Arial" ))
+		(text "NPC_en" (rect 488 79 500 120)(font "Arial" )(vertical))
+		(line (pt 496 144)(pt 496 128)(line_width 1))
+	)
+	(port
+		(pt 448 144)
+		(input)
+		(text "T_en" (rect 0 -112 23 -100)(font "Arial" ))
+		(text "T_en" (rect 440 97 452 120)(font "Arial" )(vertical))
+		(line (pt 448 144)(pt 448 128)(line_width 1))
+	)
+	(port
+		(pt 464 144)
+		(input)
+		(text "T_in" (rect 0 -112 20 -100)(font "Arial" ))
+		(text "T_in" (rect 456 100 468 120)(font "Arial" )(vertical))
+		(line (pt 464 144)(pt 464 128)(line_width 1))
+	)
+	(port
+		(pt 816 144)
+		(input)
+		(text "REG_alu_id[2..0]" (rect 0 -112 83 -100)(font "Arial" ))
+		(text "REG_alu_id[2..0]" (rect 808 30 820 113)(font "Arial" )(vertical))
+		(line (pt 816 144)(pt 816 128)(line_width 3))
+	)
+	(port
+		(pt 832 144)
+		(input)
+		(text "REG_alu_in[15..0]" (rect 0 -112 89 -100)(font "Arial" ))
+		(text "REG_alu_in[15..0]" (rect 824 24 836 113)(font "Arial" )(vertical))
+		(line (pt 832 144)(pt 832 128)(line_width 3))
+	)
+	(port
+		(pt 800 144)
+		(input)
+		(text "REG_alu_en" (rect 0 -112 61 -100)(font "Arial" ))
+		(text "REG_alu_en" (rect 792 52 804 113)(font "Arial" )(vertical))
+		(line (pt 800 144)(pt 800 128)(line_width 1))
+	)
+	(port
+		(pt 944 144)
+		(input)
+		(text "REG_mc_id[2..0]" (rect 0 -112 84 -100)(font "Arial" ))
+		(text "REG_mc_id[2..0]" (rect 936 30 948 114)(font "Arial" )(vertical))
+		(line (pt 944 144)(pt 944 128)(line_width 3))
+	)
+	(port
+		(pt 960 144)
+		(input)
+		(text "REG_mc_in[15..0]" (rect 0 -112 90 -100)(font "Arial" ))
+		(text "REG_mc_in[15..0]" (rect 952 24 964 114)(font "Arial" )(vertical))
+		(line (pt 960 144)(pt 960 128)(line_width 3))
+	)
+	(port
+		(pt 928 144)
+		(input)
+		(text "REG_mc_en" (rect 0 -112 62 -100)(font "Arial" ))
+		(text "REG_mc_en" (rect 920 52 932 114)(font "Arial" )(vertical))
+		(line (pt 928 144)(pt 928 128)(line_width 1))
+	)
+	(port
+		(pt 352 144)
+		(input)
+		(text "Bubble" (rect 344 94 358 132)(font "Arial" (font_size 8))(vertical))
+		(text "Bubble" (rect 344 80 356 113)(font "Arial" )(vertical))
+		(line (pt 352 144)(pt 352 128)(line_width 1))
+	)
+	(port
+		(pt 512 144)
+		(input)
+		(text "NPC_data[31..0]" (rect 0 -112 82 -100)(font "Arial" ))
+		(text "NPC_data[31..0]" (rect 504 38 516 120)(font "Arial" )(vertical))
+		(line (pt 512 144)(pt 512 128)(line_width 3))
+	)
+	(port
+		(pt 976 144)
+		(input)
+		(text "MC_busy" (rect 872 94 886 147)(font "Arial" (font_size 8))(vertical))
+		(text "MC_busy" (rect 968 64 980 111)(font "Arial" )(vertical))
+		(line (pt 976 144)(pt 976 128)(line_width 1))
+	)
+	(port
+		(pt 544 144)
+		(input)
+		(text "REG_change[2..0]" (rect 528 94 542 196)(font "Arial" (font_size 8))(vertical))
+		(text "REG_change[2..0]" (rect 536 32 548 122)(font "Arial" )(vertical))
+		(line (pt 544 144)(pt 544 128)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 528 144)
+		(input)
+		(text "REG_change_en" (rect 512 94 526 189)(font "Arial" (font_size 8))(vertical))
+		(text "REG_change_en" (rect 520 40 532 122)(font "Arial" )(vertical))
+		(line (pt 528 144)(pt 528 128)(line_width 1))
+	)
+	(port
+		(pt 864 144)
+		(input)
+		(text "C_in" (rect 856 94 870 118)(font "Arial" (font_size 8))(vertical))
+		(text "C_in" (rect 856 88 868 110)(font "Arial" )(vertical))
+		(line (pt 864 144)(pt 864 128)(line_width 1))
+	)
+	(port
+		(pt 144 0)
+		(input)
+		(text "IPC[31..0]" (rect 88 24 102 77)(font "Arial" (font_size 8))(vertical))
+		(text "IPC[31..0]" (rect 136 16 148 66)(font "Arial" )(vertical))
+		(line (pt 144 0)(pt 144 16)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_n" (rect 0 -112 36 -100)(font "Arial" ))
+		(text "reset_n" (rect 21 43 57 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "INT" (rect 88 24 102 41)(font "Arial" (font_size 8))(vertical))
+		(text "INT" (rect 72 24 84 41)(font "Arial" )(vertical))
+		(line (pt 80 0)(pt 80 16)(line_width 1))
+	)
+	(port
+		(pt 432 144)
+		(output)
+		(text "T_out" (rect 592 -112 619 -100)(font "Arial" ))
+		(text "T_out" (rect 424 93 436 120)(font "Arial" )(vertical))
+		(line (pt 432 144)(pt 432 128)(line_width 1))
+	)
+	(port
+		(pt 416 144)
+		(output)
+		(text "REG_data[127..0]" (rect 592 -112 680 -100)(font "Arial" ))
+		(text "REG_data[127..0]" (rect 408 32 420 120)(font "Arial" )(vertical))
+		(line (pt 416 144)(pt 416 128)(line_width 3))
+	)
+	(port
+		(pt 64 144)
+		(output)
+		(text "CC_en" (rect 56 94 70 131)(font "Arial" (font_size 8))(vertical))
+		(text "CC_en" (rect 56 80 68 114)(font "Arial" )(vertical))
+		(line (pt 64 144)(pt 64 128)(line_width 1))
+	)
+	(port
+		(pt 480 144)
+		(output)
+		(text "PC_cu[31..0]" (rect 592 -112 656 -100)(font "Arial" ))
+		(text "PC_cu[31..0]" (rect 472 56 484 120)(font "Arial" )(vertical))
+		(line (pt 480 144)(pt 480 128)(line_width 3))
+	)
+	(port
+		(pt 80 144)
+		(output)
+		(text "PC[31..0]" (rect 72 94 86 144)(font "Arial" (font_size 8))(vertical))
+		(text "PC[31..0]" (rect 72 72 84 119)(font "Arial" )(vertical))
+		(line (pt 80 144)(pt 80 128)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 400 144)
+		(output)
+		(text "REG_last[2..0]" (rect 360 94 374 174)(font "Arial" (font_size 8))(vertical))
+		(text "REG_last[2..0]" (rect 392 48 404 121)(font "Arial" )(vertical))
+		(line (pt 400 144)(pt 400 128)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 384 144)
+		(output)
+		(text "REG_last_en" (rect 344 94 358 167)(font "Arial" (font_size 8))(vertical))
+		(text "REG_last_en" (rect 376 56 388 120)(font "Arial" )(vertical))
+		(line (pt 384 144)(pt 384 128)(line_width 1))
+	)
+	(port
+		(pt 368 144)
+		(output)
+		(text "inst_en" (rect 360 94 374 135)(font "Arial" (font_size 8))(vertical))
+		(text "inst_en" (rect 360 80 372 115)(font "Arial" )(vertical))
+		(line (pt 368 144)(pt 368 128)(line_width 1))
+	)
+	(port
+		(pt 848 144)
+		(output)
+		(text "C_out" (rect 840 94 854 127)(font "Arial" (font_size 8))(vertical))
+		(text "C_out" (rect 840 80 852 109)(font "Arial" )(vertical))
+		(line (pt 848 144)(pt 848 128)(line_width 1))
+	)
+	(port
+		(pt 128 0)
+		(output)
+		(text "NPC_IPC[31..0]" (rect 72 24 86 107)(font "Arial" (font_size 8))(vertical))
+		(text "NPC_IPC[31..0]" (rect 120 8 132 88)(font "Arial" )(vertical))
+		(line (pt 128 0)(pt 128 16)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 112 0)
+		(output)
+		(text "NPC_IPC_en" (rect 56 24 70 93)(font "Arial" (font_size 8))(vertical))
+		(text "NPC_IPC_en" (rect 104 16 116 82)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 16)(line_width 1))
+	)
+	(port
+		(pt 648 144)
+		(output)
+		(text "door2" (rect 584 94 598 127)(font "Arial" (font_size 8))(vertical))
+		(text "door2" (rect 640 80 652 107)(font "Arial" )(vertical))
+		(line (pt 648 144)(pt 648 128)(line_width 1))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "door1" (rect 248 94 262 127)(font "Arial" (font_size 8))(vertical))
+		(text "door1" (rect 240 80 252 107)(font "Arial" )(vertical))
+		(line (pt 248 144)(pt 248 128)(line_width 1))
+	)
+	(port
+		(pt 664 144)
+		(output)
+		(text "door2_clr" (rect 648 94 662 148)(font "Arial" (font_size 8))(vertical))
+		(text "door2_clr" (rect 656 64 668 108)(font "Arial" )(vertical))
+		(line (pt 664 144)(pt 664 128)(line_width 1))
+	)
+	(port
+		(pt 784 144)
+		(output)
+		(text "REG_data_last[15..0]" (rect 760 94 774 213)(font "Arial" (font_size 8))(vertical))
+		(text "REG_data_last[15..0]" (rect 776 16 788 122)(font "Arial" )(vertical))
+		(line (pt 784 144)(pt 784 128)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 96 0)
+		(output)
+		(text "INT_commit" (rect 88 24 102 87)(font "Arial" (font_size 8))(vertical))
+		(text "INT_commit" (rect 88 16 100 76)(font "Arial" )(vertical))
+		(line (pt 96 0)(pt 96 16)(color 128 0 255)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 1000 128)(line_width 1))
+	)
+)
